@@ -17,7 +17,7 @@ sed -i 's/lan) ipad=${ipaddr:-"192.168.1.1"} ;;/lan) ipad=${ipaddr:-"192.168.5.1
 sed -i 's/dnsmasq/dnsmasq-full/' include/target.mk
 
 # 修改rom信息
-sed -i 's/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),Yojigen OpenWrt)/' include/version.mk
+# sed -i 's/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),Yojigen OpenWrt)/' include/version.mk
 
 # 修改时间校准服务器和时区
 sed -i "s/set system.@system[-1].timezone='UTC'/set system.@system[-1].timezone='Asia\/Shanghai'/" package/base-files/files/bin/config_generate
