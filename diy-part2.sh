@@ -19,8 +19,7 @@ sed -i 's/dnsmasq/dnsmasq-full/' include/target.mk
 # 修改rom信息
 # sed -i 's/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),Yojigen OpenWrt)/' include/version.mk
 
-# 修改时间校准服务器和时区
-sed -i 's/UTC/CST-8/' package/base-files/files/bin/config_generate
+# 修改时间校准服务器
 sed -i 's/0.openwrt.pool.ntp.org/ntp.aliyun.com/' package/base-files/files/bin/config_generate
 sed -i 's/1.openwrt.pool.ntp.org/ntp1.aliyun.com/' package/base-files/files/bin/config_generate
 sed -i 's/2.openwrt.pool.ntp.org/ntp2.aliyun.com/' package/base-files/files/bin/config_generate
