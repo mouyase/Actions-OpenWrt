@@ -21,7 +21,7 @@ sed -i 's/dnsmasq/dnsmasq-full/' include/target.mk
 
 # 修改内核版本为5.10
 sed -i 's/KERNEL_PATCHVER:=5.4/KERNEL_PATCHVER:=5.10/' target/linux/x86/Makefile
-sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/d' target/linux/x86/Makefile
+sed -i '/KERNEL_TESTING_PATCHVER:=5.4/d' target/linux/x86/Makefile
 
 # 修改时间校准服务器
 sed -i 's/0.openwrt.pool.ntp.org/ntp.aliyun.com/' package/base-files/files/bin/config_generate
