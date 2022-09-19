@@ -11,10 +11,10 @@
 #
 
 # 修改默认IP为192.168.5.1
-sed -i 's/192.168.1.1/192.168.5.1/' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/192.168.5.1/' package/base-files/files/bin/config_generate
 
 # 修改默认使用dnsmasq-full
-sed -i 's/dnsmasq/dnsmasq-full/' include/target.mk
+# sed -i 's/dnsmasq/dnsmasq-full/' include/target.mk
 
 # 修改rom信息
 # sed -i 's/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt)/VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),Yojigen OpenWrt)/' include/version.mk
