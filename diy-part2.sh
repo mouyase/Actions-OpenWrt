@@ -24,7 +24,7 @@
 # sed -i '/KERNEL_TESTING_PATCHVER:=5.4/d' target/linux/x86/Makefile
 
 # 修改时间校准服务器
-sed -i 's/0.openwrt.pool.ntp.org/ntp.aliyun.com/' package/base-files/files/bin/config_generate
-sed -i 's/1.openwrt.pool.ntp.org/ntp1.aliyun.com/' package/base-files/files/bin/config_generate
-sed -i 's/2.openwrt.pool.ntp.org/ntp2.aliyun.com/' package/base-files/files/bin/config_generate
-sed -i 's/3.openwrt.pool.ntp.org/ntp3.aliyun.com/' package/base-files/files/bin/config_generate
+# sed -i 's/0.openwrt.pool.ntp.org/ntp.aliyun.com/' package/base-files/files/bin/config_generate
+# sed -i 's/1.openwrt.pool.ntp.org/ntp1.aliyun.com/' package/base-files/files/bin/config_generate
+# sed -i 's/2.openwrt.pool.ntp.org/ntp2.aliyun.com/' package/base-files/files/bin/config_generate
+# sed -i 's/3.openwrt.pool.ntp.org/ntp3.aliyun.com/' package/base-files/files/bin/config_generate
