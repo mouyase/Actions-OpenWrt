@@ -1,0 +1,7 @@
+
+config login
+	option minute '0'
+	option enable '1'
+	option week '1'
+	option hour '4'
+
