@@ -34,7 +34,7 @@ config smartdns
 config server
 	option enabled '1'
 	option name '腾讯'
-	option ip '119.29.29.29 5'
+	option ip '119.29.29.29'
 	option type 'udp'
 	option server_group 'china'
 	option blacklist_ip '0'
